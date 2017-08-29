@@ -1391,38 +1391,38 @@ form input[type="submit"], form button, form input[type="reset"] {
 .text-right {
   text-align: right; }
 
-.seremon-list {
+.sermon-list {
   list-style: none;
   margin-bottom: 30px; }
-  .seremon-list li {
+  .sermon-list li {
     padding: 10px 0 10px 80px;
     position: relative;
     border-bottom: 1px solid #e5e5e5;
     min-height: 70px; }
-    .seremon-list li:first-child {
+    .sermon-list li:first-child {
       border-top: 1px solid #e5e5e5; }
-  .seremon-list img {
+  .sermon-list img {
     position: absolute;
     left: 0;
     top: 10px; }
-  .seremon-list .seremon-title {
+  .sermon-list .sermon-title {
     margin-bottom: 10px;
     font-size: 14px;
     font-size: 1em; }
-  .seremon-list .seremon-meta {
+  .sermon-list .sermon-meta {
     font-size: 12px;
     font-size: 0.8571428571em;
     color: #a59e95;
     font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
     text-transform: lowercase; }
-    .seremon-list .seremon-meta .pastor {
+    .sermon-list .sermon-meta .pastor {
       margin-bottom: 5px; }
-    .seremon-list .seremon-meta .fa {
+    .sermon-list .sermon-meta .fa {
       width: 20px; }
-  .seremon-list.large li {
+  .sermon-list.large li {
     padding-left: 140px;
     min-height: 150px; }
-  .seremon-list.large .seremon-meta .pastor, .seremon-list.large .seremon-meta .date {
+  .sermon-list.large .sermon-meta .pastor, .sermon-list.large .sermon-meta .date {
     display: inline-block;
     margin-right: 20px; }
 
