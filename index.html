@@ -40,13 +40,20 @@
 						<button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
 						<ul class="menu">
 							<li class="menu-item current-menu-item">
-                <a href="index.html">Homepage <small>Lorem ipsum</small></a>
-              </li>
-							<li class="menu-item"><a href="#">Pastors <small>Cupidatat non proident</small></a></li>
-							<li class="menu-item"><a href="sermons.html">Sermons <small>Laboris nisi aliquip</small></a></li>
-							<li class="menu-item"><a href="events.html">Events <small>Sunt in culpa</small></a></li>
-							<li class="menu-item"><a href="families.html">Families <small>Aute irure</small></a></li>
-							<li class="menu-item"><a href="#">Contact <small>lorem ipsum</small></a></li>
+                                <a href="index.html">Homepage <small>Lorem ipsum</small></a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="about.html">About Us <small>About Our Church</small></a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="sermons.html">Sermons <small>Words From On High</small></a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="book.html">The Book <small>Donate Today</small></a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#contact">Contact <small>We Want To Hear From You</small></a>
+                            </li>
 						</ul>
 					</div>
 
@@ -215,7 +222,7 @@
 								</ul>
 
 								<div class="text-center">
-									<a href="#" class="button">See all seremons</a>
+									<a href="#" class="button">See all sermons</a>
 								</div>
 							</div>
 						</div> <!-- .row -->
@@ -240,14 +247,14 @@
 						<div class="col-md-4">
 							<div class="widget text-center">
 								<h2 class="widget-title">Free Gift With Donation!</h2>
-								<a href=""><img src="images/theperfectshot.png"></a>
+								<a href="book.html"><img src="images/book_thumb.png"></a>
                                 <p><strong>$29.95</strong></p>
                                 <img src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_donate_cc_147x47.png" alt="Donate">
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="widget">
-								<h3 class="widget-title">Contact form</h3>
+								<h3 class="widget-title"><a name="contact">Contact form</a></h3>
 								<form action="#" class="contact-form">
 									<div class="row">
 										<div class="col-md-6"><input type="text" placeholder="Your name..."></div>
@@ -270,6 +277,31 @@
         <script src="js/snow.js"></script>
         <script src="js/flipclock.min.js"></script>
 		<script src="js/app.js"></script>
-	</body>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(document).snow({ SnowImage: "images/floatingfrog.gif", Quantity: 20 });
 
+                // Countdown Timer
+                var start = new Date();
+                var daysToAdd = 5;
+
+                if (window.location.hash) {
+                    daysToAdd = parseInt(window.location.hash.split('#')[1]);
+                }
+
+                var end = new Date();
+                end.setDate(start.getDate() + daysToAdd);
+                // Set 8pm
+                end.setHours(20);
+                end.setMinutes(0);
+
+                var diff = Math.floor((end.getTime() - start.getTime())/1000);
+
+                var clock = $('.countdown').FlipClock(diff, {
+                    clockFace: 'DailyCounter',
+                    countdown: true,
+                });
+            });
+        </script>
+	</body>
 </html>
