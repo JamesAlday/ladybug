@@ -1247,7 +1247,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     .hero .slides .button, .hero .slides form input[type="submit"], form .hero .slides input[type="submit"], .hero .slides form button, form .hero .slides button, .hero .slides form input[type="reset"], form .hero .slides input[type="reset"] {
       position: relative;
       height: 50px;
-      background: url(images/button-bg.png);
+      background: url(../images/button-bg.png);
       padding: 15px 10px 15px 25px;
       border-bottom: none;
       box-shadow: none;
@@ -1258,7 +1258,7 @@ form input[type="submit"], form button, form input[type="reset"] {
         content: " ";
         height: 50px;
         width: 13px;
-        background: url(images/button-bg-right.png) no-repeat;
+        background: url(../images/button-bg-right.png) no-repeat;
         position: absolute;
         top: 0;
         left: 100%; }
@@ -1276,12 +1276,12 @@ form input[type="submit"], form button, form input[type="reset"] {
       display: block;
       width: 18px;
       height: 20px;
-      background: url(images/pagination.png);
+      background: url(../images/pagination.png);
       overflow: hidden;
       text-indent: -999px;
       cursor: pointer; }
       .hero .flex-control-nav a.flex-active {
-        background: url(images/pagination-current.png); }
+        background: url(../images/pagination-current.png); }
 
 .page-head {
   background-size: cover;
@@ -1458,7 +1458,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     font-weight: 600; }
 
 .arrow {
-  list-style-image: url(images/arrow.png);
+  list-style-image: url(../images/arrow.png);
   list-style-position: inside; }
   .arrow li {
     padding: 10px 0;
@@ -1493,7 +1493,7 @@ ul.address {
     color: #dcc2a0; }
 
 ul.bullet {
-  list-style-image: url(images/bullet.png);
+  list-style-image: url(../images/bullet.png);
   list-style-position: inside; }
   ul.bullet li {
     padding: 10px 0;
